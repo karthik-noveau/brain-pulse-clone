@@ -1461,7 +1461,7 @@ body {
         float: left;
         display: none;
         width: 100%;
-        top: 50px;
+        top: 23px;
         position: absolute;
         background: #fff;
         border-bottom: 1px solid #333;
@@ -1755,7 +1755,7 @@ body {
 }
 
 
-@media screen and (max-width:479px) {
+@media(max-width:479px) {
     .sticky-footer .sticky-phone a img {
         display: none;
     }
@@ -1765,10 +1765,31 @@ body {
         font-size: 14px;
     }
 
+
+
+
     .navigation-bx ul li a {
         color: #000;
         font-size: 16px;
         font-weight: bold;
     }
 
+}
+
+
+@media(max-width: 767px) {
+    .navigation-bx {
+        float: left;
+        display: none;
+        width: 100%;
+        top: 0px;
+        position: absolute;
+        background: #fff;
+        border-bottom: 1px solid #333;
+    }
+
+    .sticky-logo img {
+        width:55%;
+        margin-bottom: 6px;
+    }
 }
