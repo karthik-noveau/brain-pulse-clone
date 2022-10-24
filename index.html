@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Skynoveau technology</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./style1.css">
+  <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+  <!-- Global site tag (gtag.js) - Google Ads: 1065360964 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1065360964"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-1065360964');
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var position = $(window).scrollTop();
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > position) {
+          //  console.log('scrollDown');
+          $('.animatefix').addClass('active');
+        } else {
+          // console.log('scrollUp');
+          $('.animatefix').removeClass('active');
+        }
+        position = scroll;
+      });
+      $(window).bind("resize", function () {
+        console.log($(this).width())
+        if ($(this).width() < 767) {
+          $('.navigation-bx').addClass('navigation-res')
+        } else {
+          $('.navigation-bx').addClass('navigation-res')
+        }
+      })
+
+      $('.responsive_nav').click(function () {
+        $('.navigation-bx').slideToggle();
+      });
+
+      //$('.navigation-bx ul li a').click(function(){
+      //$('.navigation-res').slideToggle();
+      //});
+
+      $('#explore-btn3').click(function () {
+        $('body,html').animate({
+          scrollTop: $(".web-component2").offset().top - 55
+        }, 800);
+        return false;
+      });
+      $('#explore-btn4').click(function () {
+        $('body,html').animate({
+          scrollTop: $(".our-process-bx").offset().top - 120
+        }, 800);
+        return false;
+      });
+
+      $('#explore-btn5').click(function () {
+        $('body,html').animate({
+          scrollTop: $(".about-business-component").offset().top - 100
+        }, 800);
+        return false;
+      });
+
+      $('#explore-btn6').click(function () {
+        $('body,html').animate({
+          scrollTop: $(".about-business-sp").offset().top - 100
+        }, 800);
+        return false;
+      });
+
+
+      $('.explore-btn_').click(function () {
+        $('body,html').animate({
+          scrollTop: $("#callback_section").offset().top - 100
+        }, 800);
+        return false;
+      });
+
+
+    });
+
+    $(function () {
+      $("a[href^='tel']").click(function () {
+        ga('send', 'event', 'mobile', 'click', 'mobile click');
+      });
+
+      $("a[href^='mailto']").click(function () {
+        ga('send', 'event', 'email', 'click', 'email click');
+      });
+    });
+
+    function callback() {
+      var phonenumber = $("#phonenumber").val();
+      if (phonenumber.length == 10) {
+        $.ajax({
+          type: "POST",
+          url: 'callback.php',
+          data: { phone: phonenumber },
+          success: function (response) {
+
+            //ga('send', 'event', 'click-to-call', 'click', 'Click To Call');
+            gtag('event', 'conversion', {
+              'send_to': 'AW-1065360964/OdlJCODWxn4QxLyA_AM',
+              'event_callback': 'callback'
+            });
+
+            $("#phonenumber").val('');
+            $("#invalid_number").html('<i style="color: green;margin-top: 5px;float: left;">We will contact you shortly!</i>');
+            $('#invalid_number').delay(3000).fadeOut();
+          }
+        });
+      } else {
+        $("#invalid_number").html('<i style="color: red;margin-top: 5px;float: left;">Please enter valid number.</i>');
+        $('#invalid_number').delay(3000).fadeOut();
+      }
+    }
+    function getDataside() {
+      var fdata = $("#formdataside").serialize();
+      $.ajax({
+        type: "POST",
+        url: 'submit.php',
+        data: fdata,
+        success: function (response) {
+          //alert(response)
+          //ga('send', 'event', 'click-to-call', 'click', 'Click To Call');
+          gtag('event', 'conversion', {
+            'send_to': 'AW-1065360964/OdlJCODWxn4QxLyA_AM',
+            'event_callback': 'Click To Call'
+          });
+          $("#formdataside")[0].reset();
+          $("#responseside").html(response);
+        }
+      });
+    }
+
+    function getData() {
+      var fdata = $("#formdata").serialize();
+      $.ajax({
+        type: "POST",
+        url: 'submit.php',
+        data: fdata,
+        success: function (response) {
+          //alert(response)
+          gtag('event', 'conversion', {
+            'send_to': 'AW-1065360964/OdlJCODWxn4QxLyA_AM',
+            'event_callback': callback
+          });
+
+          $("#formdata")[0].reset();
+          $("#response").html(response);
+        }
+      });
+    }						   			   
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <style>
+      .sticky_btn {
+        position: fixed;
+        right: 10px;
+        top: 40%;
+        z-index: 12;
+        background: #e1e0e0;
+        width: 64px;
+        padding: 20px 12px;
+        border-radius: 30px;
+      }
+
+      .sticky_btn .btn4 {
+        text-align: center;
+        background: #c1303c;
+        position: relative;
+        color: #fff;
+        border: 0px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 22px;
+        padding-top: 5px;
+        margin: 3px 0px;
+      }
+
+      .sticky_btn .btn4 .fa {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .sticky_btn a.btn4 {
+        display: inline-block;
+        text-align: center;
+        padding-top: 2px;
+        background: #29a71a;
+        font-size: 28px;
+      }
+
+      .sticky_btn .btn4:hover {
+        background: #000;
+      }
+
+      .sticky_btn a.btn4:hover {
+        background: #219f11;
+      }
+
+      .btn4 .bp-tooltip {
+        position: absolute;
+        right: 51px;
+        width: 141px;
+        line-height: 14px;
+        font-size: 13px;
+        text-align: center;
+        background: #333;
+        padding: 7px 15px 4px;
+        z-index: 99;
+        border-radius: 4px;
+        transform-origin: 50% 0;
+        transform: scaleY(0) translateZ(0);
+        opacity: 0;
+        transition: transform 0.3s, opacity .3s;
+        top: 9px;
+        display: block;
+      }
+
+      .btn4 .bp-tooltip:before {
+        width: 0;
+        height: 0;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        border-left: 9px solid #333333;
+        position: absolute;
+        right: -9px;
+        top: 5px;
+        content: '';
+      }
+
+      .btn4:hover .bp-tooltip {
+        opacity: 1;
+        transform: scaleY(1) translateZ(0px);
+      }
+    </style>
+
+    <div class="sticky_btn">
+      <button class="request_quote_btn btn4" data-toggle="modal" data-target="#myModal"><i class="fa fa-file-text-o"
+          aria-hidden="true"></i>
+        <div class="bp-tooltip">Request a Quote</div>
+      </button>
+      <button class="call_back_btn btn4 explore-btn_"><i class="fa fa-phone" aria-hidden="true"></i>
+        <div class="bp-tooltip">Call Back</div>
+      </button>
+      <a href="#" class="wts_btn btn4" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <div class="bp-tooltip">Whatsapp</div>
+      </a>
+    </div>
+
+    <div class="animatefix">
+      <div class="container">
+        <div class="head-component">
+          <div class="sticky-logo"><img alt="" src="./Assests//mailing_logo.png" width="70%"  ></div>
+          <div class="sticky-phone">
+            <p> <span>Call Us:</span><a href="tel:+918527795844">+91 9360375911</a> </p>
+            <p> <span>Write Us: </span> <a class="email" href="mailto:sales@brainpulse.com">skynoveau.in@gmail.com</a>
+            </p>
+          </div>
+          <div class="call-btn"><a href="tel:+918527795844">+91-8527795844</a></div>
+          <div class="responsive_nav">
+            <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+          </div>
+          <div class="navigation-bx">
+            <ul>
+              <li><a href="javascript:void(0);" id="explore-btn3">Services</a></li>
+              <li><a href="javascript:void(0);" id="explore-btn4">Process</a></li>
+              <li><a href="javascript:void(0);" id="explore-btn5">About Us</a></li>
+              <li><a href="javascript:void(0);" id="explore-btn6">Clients</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="app-section-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-7 col-lg-7">
+            <div class="banner-info-component">
+              <div class="banenr-slides-app">
+                <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="2500">
+                  <div class="carousel-inner">
+
+                    <div class="item active">
+                      <h2>Take Your Business to the Next Level. Improve Your<span> Online Visibility</span> </h2>
+                      <p>Whether you are striving for more visitor traffic on your website or increased brand
+                        visibility, our <b>performance-based digital marketing</b> solutions can help. </p>
+                      <div class="sc-counting">
+                        <ul>
+                          <li>More Customers</li>
+                          <li>More Sales</li>
+                          <li>More Revenue</li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="item">
+                      <h2>Promote your Business across <span>Digital Marketing Channels</span></h2>
+                      <p>We build and manage online marketing campaigns to engage your customers across channels
+                        including <b>search engine, social media, mobile marketing, and display ads.</b> </p>
+                      <div class="dis-ads-ic"><img src="images/display-ads-icon.png"></div>
+                    </div>
+                    <div class="item">
+                      <h2> Assured Business Growth via<span> Performance Driven Digital Marketing </span> </h2>
+                      <p>Our performance marketing strategies ensure that new customers can find your business in the
+                        online space. We assure you of<b> business growth </b>by improving your brand’s visibility.</p>
+                      <div class="dis-ads-ic"><img src="./Assests//doller-icon.png"></div>
+                    </div>
+                  </div>
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel3" data-slide-to="1"></li>
+                    <li data-target="#myCarousel3" data-slide-to="2"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-price">
+            <h3>Plans <span>Start @</span></h3>
+            <div class="br-price">INR 12,999/m</div>
+          </div>
+          <div class="col-md-5 col-sm-5 col-lg-5">
+            <div class="quick-contact-form">
+              <h2>Enquire Now</h2>
+              <p>Fill out the information below and we will
+                call you soon</p>
+              <form method="POST" action="" id="formdata">
+                <div class="form-fields">
+                  <input type="text" value="" name="name" placeholder="NAME" class="fields">
+                </div>
+                <div class="form-fields">
+                  <input type="text" value="" name="mobile" placeholder="MOBILE" class="fields">
+                </div>
+                <div class="form-fields">
+                  <input type="text" value="" name="email" placeholder="EMAIL" class="fields">
+                </div>
+                <!--div class="form-fields">
+                <select name="service">
+                  <option value="">Select Service</option>
+                  <option value="Search Engine Optimization">Search Engine Optimization</option>
+                  <option value="Social Media Marketing">Social Media Marketing</option>
+                  <option value="Display Ads">Display Ads</option>
+                  <option value="Email Marketing">Email Marketing</option>
+                  <option value="SMS Marketing">SMS Marketing</option>
+                  <option value="Analytics">Analytics</option>
+                </select>
+              </div-->
+                <div class="form-fields">
+                  <textarea class="msgbx" name="comments" placeholder="MESSAGE"></textarea>
+                </div>
+                <div class="form-fields text-center">
+                  <button type="button" onClick="getData();">SUBMIT</button>
+                </div>
+              </form>
+              <div class="ft-note" id="response"></div>
+              <div class="ft-note">*All the information will be treated as confidential</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="call-back-section" id="callback_section">
+      <div class="container">
+        <div class="call-back-action">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>5 MINUTES <span>Call Back</span></h4>
+            </div>
+            <div class="col-md-8">
+              <div class="select-country-code-field">
+                <select>
+                  <option>+91</option>
+                </select>
+                <div class="phone-num-field">
+                  <input type="number" value="" name="phonenumber" id="phonenumber" placeholder="Type Your Number">
+                  <button type="button" onClick="callback();">Call Me</button>
+                  <span id="invalid_number"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="web-component2">
+      <div class="container">
+        <div class="section-head">
+          <h2><span>Integrated </span> Digital Marketing Channels</h2>
+          <div class="we-help">Be Found. Be Heard</div>
+        </div>
+        <div class="integrated-service">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="service--item p1">
+                <figure><img src="./Assests//Search-Engine-Optimization.png"></figure>
+                <h3><span>Search Engine</span> Optimization </h3>
+                <p>Get into the top of the search results for most competitive keywords. Drive traffic and boost
+                  conversion. </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service--item">
+                <figure><img src="./Assests//Social-Media-Marketing.png"></figure>
+                <h3><span>Social Media </span> Marketing </h3>
+                <p>Engage and connect with your audience on premium social networks. Enhance your brand visibility. </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service--item p1">
+                <figure><img src="images/display-ads-icon3.png"></figure>
+                <h3><span>Display</span> Ads </h3>
+                <p>Get highly targeted traffic that converts into leads and translates into paying customers. Scale your
+                  business growth.</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service--item">
+                <figure><img src="./Assests/brand-managements-icon.png"></figure>
+                <h3><span>Brand</span> Management</h3>
+                <p>Proven marketing strategies in place to build, improve and strengthen your brand&rsquo;s value and
+                  reputation. </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service--item p1">
+                <figure><img src="./Assests//conversion-rate-optimization.png"></figure>
+                <h3><span>Conversion Rate</span> Optimization</h3>
+                <p>Our rigorously tested CRO strategies help you turn Your visitors into paying customers and boost
+                  Sales.</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service--item">
+                <figure><img src="./Assests//Analytics.png"></figure>
+                <h3><span>Web </span> Analytics</h3>
+                <p>Measure performance to make the right decisions and drive your business Forward. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="web-component1">
+      <div class="container">
+        <div class="section-head">
+          <h2>Performance Driven <span>Digital Marketing</span> Solutions</h2>
+          <div class="we-help">10X Your Organic Website Traffic </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <p>Brainpulse is a result-driven performance marketing agency with focus on 100% measurable returns. our
+              performance-based marketing plans will always deliver the results you pay for. Strategies built around
+              individual mediums don't necessarily have a huge impact. Thus, we use them in conjunction to create a more
+              influential online presence. Our team <strong>combines technology and communication mediums to ideate,
+                create and optimize performance-centric campaigns that reduce risks involved and deliver higher
+                ROI.</strong> No matter the size of your organization, we make sure that every dollar spent on
+              advertising work and maximize your overall return on investment.</p>
+          </div>
+          <div class="col-md-2">
+            <img src="./Assests//plans-str.png" alt="plans">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="web-component3 text-center">
+      <div class="container">
+        <div class="section-head">
+          <h2><span>Strategies</span> to Get You Growing</h2>
+        </div>
+        <div class="key-pillers">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <ul>
+                <li class="e1"><span>Effective</span><br>
+                  Brand Communication</li>
+                <li class="e2">Targeting<br>
+                  <span>Right</span> Audience
+                </li>
+                <li class="e3"><span>Reliable</span><br>
+                  Conversion Strategies</li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <figure><img src='./Assests/key-pillers-img.jpg'></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="web-component4">
+      <div class="container">
+        <div class="our-process-bx">
+          <div class="section-head text-center">
+            <h2>ROI Driven Digital Marketing <span>Process</span></h2>
+          </div>
+          <ul>
+            <li>
+              <figure><img src="./Assests/goal-analysis.jpg"></figure>
+              <h3>Goal Analysis</h3>
+            </li>
+            <li>
+              <figure><img src="./Assests/Audience-Research.jpg"></figure>
+              <h3> Audience Research</h3>
+            </li>
+            <li>
+              <figure><img src="./Assests/Competition-Analysis.jpg"></figure>
+              <h3>Competition Analysis</h3>
+            </li>
+            <li>
+              <figure><img src="./Assests/Finding-Channels.jpg"></figure>
+              <h3>Finding Channels</h3>
+            </li>
+            <li>
+              <figure><img src="./Assests/Creating-Content.jpg"></figure>
+              <h3>Creating Content</h3>
+            </li>
+            <li>
+              <figure><img src="./Assests/Measuring-Results.jpg"></figure>
+              <h3>Measuring Results</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="app-number-component">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="nm-component">
+                <h3 style="border-left: 5px solid #AF0C0C;"><span>Numbers</span> Speak</h3>
+                <ol>
+                  <li>
+                    <h4>3500+</h4>
+                    <p><span>Clients</span> Served</p>
+                  </li>
+                  <li>
+                    <h4>5000+</h4>
+                    <p><span>Project </span> Handled</p>
+                  </li>
+                  <li>
+                    <h4>120 CR+</h4>
+                    <p><span>Budget</span> Managed</p>
+                  </li>
+                  <li>
+                    <h4>98.99%</h4>
+                    <p>Client <span>Retention</span></p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="nm-component" style=" border:3px solid #3c3c3c">
+                <h3>We Are in <span>Nutshell</span></h3>
+                <ol>
+                  <li>
+                    <h4>20+</h4>
+                    <p><span>Years</span> in Business</p>
+                  </li>
+                  <li>
+                    <h4>200+</h4>
+                    <p>Strong <span>Team </span></p>
+                  </li>
+                  <li>
+                    <h4>15+</h4>
+                    <p><span>Countries</span> Covered</p>
+                  </li>
+                  <li>
+                    <h4>10+</h4>
+                    <p><span>Affiliations</span></p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-business-component">
+          <div class="row">
+            <div class="col-md-5 col-sm-5">
+              <figure><img src="./Assests/group-team.jpg"></figure>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <h3>Brainpulse: <span>Empowering</span> Businesses <span>Since 1998</span></h3>
+              <p> Started in 1998, Brainpulse has so far helped several thousands of online businesses with digital
+                solutions specially designed to address their business challenges. Our performance based digital
+                marketing plans are a perfect mix of team, strategy and process that <strong>helps brands to identify
+                  real-time opportunities, connect with their target audience and acquire new customers.</strong> If
+                you’re looking for a digital marketing agency to improve your search rankings, increase your reach or
+                generate business leads, we are a perfect fit. We have a range of integrated digital marketing plans on
+                offer. Choose the best without being locked into a long-term contract. </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-business-sp">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="clients-st">
+                <h3>Our Esteemed <span>Clients</span></h3>
+                <figure><img src="./Assests/clients-img.jpg"></figure>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="testimonial-bx">
+                <h3>Clients’ <span>Speak </span></h3>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <p>I am really happy that that keywords are ranking high. But, we should get all keywords at
+                        ranking #1. I know you people will work on fast track. Thanks for doing such a great job. Your
+                        SEO team handled the project very professionally and devoted efforts honestly.</p>
+                      <span class="name">JC Das</span>
+                    </div>
+                    <div class="item ">
+                      <p>Hi All, I see that the rankings are recovering. Brilliant. Keep up the good work. PGS backs to
+                        number 1 soon for Promotional Gifts. Your hard work starts converting into the visible results.
+                        I appreciate the level of dedication you people put in the project. Thanks for that rock solid
+                        results.</p>
+                      <span class="name">Robin Koffler</span>
+                    </div>
+                    <div class="item">
+                      <p>Good work ! I can see the same ! We are only 1 month in as well which is excellent Keep up the
+                        good work. You people worked really well, and of course, results are encouraging. Your dedicated
+                        efforts are commendable. Keep doing that level of work folks.</p>
+                      <span class="name">Hackney Richard</span>
+                    </div>
+                  </div>
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyrightinfo">
+      <p class="address"><i class="fa fa-map-marker" aria-hidden="true"></i> C-102, sector 65 Noida Uttar Pradesh 201301
+        - India</p> &copy; 1998 - 2022 BrainPulse Technologies Pvt. Ltd. All Rights Reserved.
+    </div>
+  </div>
+  <div class="sticky-footer">
+    <div class="sticky-phone"><a class="mobile-num" href="tel:08527795844"><img src="images/stk-phone.png" alt="phone">
+        +91-8527795844</a><a href="mailto:sales@brainpulse.com" class="email"><img src="images/email-icon2.png"
+          alt="email"> sales@brainpulse.com</a></div>
+  </div>
+  <div id="myModal" class="modal model-bx fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-body">
+          <div class="quick-contact-form">
+            <h2>Enquire Now</h2>
+            <p>Fill out the information below and we will
+              call you soon</p>
+            <form method="POST" action="" id="formdataside">
+              <div class="form-fields">
+                <input type="text" value="" name="name" placeholder="NAME" class="fields">
+              </div>
+              <div class="form-fields">
+                <input type="text" value="" name="mobile" placeholder="MOBILE" class="fields">
+              </div>
+              <div class="form-fields">
+                <input type="text" value="" name="email" placeholder="EMAIL" class="fields">
+              </div>
+              <!--div class="form-fields">
+              <select name="service">
+                <option value="">Select Service</option>
+                <option value="Search Engine Optimization">Search Engine Optimization</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Display Ads">Display Ads</option>
+                <option value="Email Marketing">Email Marketing</option>
+                <option value="SMS Marketing">SMS Marketing</option>
+                <option value="Analytics">Analytics</option>
+              </select>
+            </div-->
+              <div class="form-fields">
+                <textarea class="msgbx" name="comments" placeholder="MESSAGE"></textarea>
+              </div>
+              <div class="form-fields text-center">
+                <button type="button" onClick="getDataside();">SUBMIT</button>
+              </div>
+            </form>
+            <div class="ft-note" id="responseside"></div>
+            <div class="ft-note">*All the information will be treated as confidential</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

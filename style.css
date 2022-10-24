@@ -1,0 +1,1774 @@
+body {
+    font-family: 'ProximaNovaRegular';
+}
+
+.slide-banner {
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+    padding: 0px 30px;
+}
+
+.bx-wrap {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.bx-wrap:before {
+    position: absolute;
+    background: url(../images/shadow.png) bottom center no-repeat;
+    bottom: -2px;
+    left: 0px;
+    width: 100%;
+    content: '';
+    height: 31px;
+    z-index: 123;
+}
+
+.bx-wrap2 {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 220px;
+}
+
+.section-left {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    background: #dfdfdf;
+    top: 0px;
+    height: 100%;
+}
+
+.section-right {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    background: #f1f1f1;
+    top: 0px;
+    height: 100%;
+}
+
+.str-bx {
+    background: rgba(0, 0, 0, 0) url("../images/th-icon.png") no-repeat scroll 1px 8px;
+    border-right: 1px solid #d6d6d6;
+    color: #000;
+    font-size: 15px;
+    height: 68px;
+    padding-left: 60px;
+    padding-top: 7px;
+    text-transform: uppercase;
+}
+
+#response {
+    background: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.str-bx strong {
+    font-size: 32px;
+    color: #000000;
+    font-weight: normal;
+    display: block;
+    line-height: 28px;
+}
+
+.str-bx span {
+    color: #af0c0c;
+    font-weight: bold;
+}
+
+.bx-wrap2 h3 {
+    color: #0f0f0f;
+    font-size: 24px;
+}
+
+.red-text {
+    color: #af0c0c;
+}
+
+.emp-bx {
+    background: url(../images/emp-icon.png) no-repeat 1px 8px;
+    padding-left: 60px;
+    padding-top: 7px;
+    height: 68px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000;
+}
+
+.emp-bx strong {
+    font-size: 32px;
+    color: #000000;
+    font-weight: normal;
+    display: block;
+    line-height: 28px;
+}
+
+.emp-bx span {
+    color: #af0c0c;
+    font-weight: bold;
+}
+
+.offset-t2 {
+    margin-top: 10px;
+}
+
+.iso-bx {
+    background: url(../images/iso-icon.png) no-repeat 1px 8px;
+    padding-left: 60px;
+    padding-top: 7px;
+    height: 68px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000;
+    border-right: 1px solid #d6d6d6;
+}
+
+.iso-bx strong {
+    font-size: 32px;
+    color: #000000;
+    font-weight: normal;
+    display: block;
+    line-height: 28px;
+}
+
+.iso-bx span {
+    color: #af0c0c;
+    font-weight: bold;
+}
+
+.client-bx {
+    background: url(../images/client-icon.png) no-repeat 1px 8px;
+    padding-left: 60px;
+    padding-top: 7px;
+    height: 68px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000;
+}
+
+.client-bx strong {
+    font-size: 32px;
+    color: #000000;
+    font-weight: normal;
+    display: block;
+    line-height: 28px;
+}
+
+.client-bx span {
+    color: #af0c0c;
+    font-weight: bold;
+}
+
+.bx-wrap2 .single-img {
+    margin-bottom: 6px;
+    padding-right: 6px;
+}
+
+.explore-btn {
+    background: #af0c0c;
+    clear: both;
+    color: #fff;
+    font-size: 42px;
+    line-height: 32px;
+    cursor: pointer;
+    padding: 47px 0 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+}
+
+.explore-btn span {
+    color: #141414;
+    font-weight: normal;
+    display: block;
+    transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -webkit-transition: .25s ease-in-out;
+    font-size: 27.5px;
+    /*background:url(../images/bottom-arrow.png) bottom center no-repeat;*/
+    padding-bottom: 25px;
+}
+
+.explore-btn:hover span {
+    /* background:url(../images/bottom-arrow-h.png) bottom center no-repeat; padding-bottom:20px;  */
+    color: #af0c0c;
+}
+
+.downArrow {
+    position: absolute;
+    left: 50%;
+    margin-left: -19px;
+    top: 12px;
+
+}
+
+.head-component {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+}
+
+.animatefix {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 89px;
+}
+
+.sticky-logo {
+    width: 268px;
+    float: left;
+}
+
+.sticky-logo img {
+    max-width: 100%;
+}
+
+.sticky-phone {
+    float: right;
+    width: 30%;
+    margin-top: 8px;
+}
+
+.sticky-phone a {
+    font-size: 17px;
+    color: #111;
+    display: inline-block;
+}
+
+.sticky-phone p span {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    color: #AF0C0C;
+    font-family: 'ProximaNovaBold';
+}
+
+.sticky-phone p {
+    margin: 3px 0 0 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+}
+
+
+
+.navigation-bx {
+    float: right;
+    width: auto;
+    padding: 14px 50px 0 0
+}
+
+.navigation-bx ul {
+    width: 100%;
+    padding: 0px;
+    float: left;
+    list-style: none;
+    margin: 0px;
+}
+
+.navigation-bx ul li {
+    float: left;
+    margin: 9px 10px 0;
+}
+
+.navigation-bx ul li a {
+    color: #000;
+    font-size: 16px;
+    font-family: 'ProximaNovaBold';
+    text-transform: uppercase;
+}
+
+.navigation-bx ul li a:hover,
+.navigation-bx ul li a:focus,
+.navigation-bx ul li a:active {
+    color: #b21414;
+    text-decoration: none;
+}
+
+.responsive_nav {
+    display: none;
+}
+
+
+.model-bx .modal-content {
+    -webkit-box-shadow: 0;
+    box-shadow: none;
+    background: none;
+    width: 100%;
+    float: left;
+}
+
+.form-fields select option {
+    background: #A70000;
+}
+
+.model-bx .modal-body {
+    padding: 0;
+}
+
+.model-bx .close {
+    font-size: 38px;
+    position: absolute;
+    right: 13px;
+    color: #fff;
+    z-index: 45;
+    opacity: 1;
+    font-weight: normal;
+}
+
+.mobile-app-phone {
+    display: none;
+}
+
+.model-bx .close:focus {
+    outline: none;
+}
+
+.app-section-content {
+    width: 100%;
+    float: left;
+    padding: 0px 0px 0 0;
+    background: #e8e7e7;
+}
+
+.banner-info-component {
+    width: 100%;
+    float: left;
+    padding-right: 0;
+    margin-top: 59px;
+}
+
+.banner-info-component h2 {
+    font-size: 39px;
+    font-family: "ProximaNovaBold";
+    line-height: 46px;
+    color: #111;
+}
+
+.banner-info-component p {
+    font-size: 23px;
+}
+
+.banner-info-component h2 span,
+.sc-counting span,
+.section-head h2 span {
+    color: #A70000
+}
+
+.banner-info-component h3 {
+    font-size: 25px;
+    font-family: ProximaNovaBold;
+    margin: 6px 0 14px 0;
+    color: #000000;
+    padding: 14px 39px;
+    display: inline-block;
+    background: #facb0d;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.banner-info-component h3:before {
+    background: url(../images/triangle.png) no-repeat;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: -1px;
+    content: '';
+}
+
+.sc-counting {
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+.sc-counting ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.sc-counting ul li {
+    text-transform: none;
+    margin: 0 8px 5px;
+    background: url(../images/tick-sign.png) no-repeat 0px 7px;
+    padding-left: 33px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-size: 24px;
+    font-family: 'ProximaNovaBold';
+    color: #111;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.banenr-slides-app .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 322px;
+}
+
+.sp-support {
+    width: 100%;
+    float: left;
+    margin: 49px 0 0 0;
+}
+
+.sp-support a {
+    font-family: ProximaNovaBold;
+    font-size: 22px;
+    color: #111;
+    padding: 15px 24px 15px 55px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.sp-support a.ph {
+    background: url(../images/phone.png) no-repeat 13px 5px;
+    border: 2px solid #A70000;
+}
+
+.sp-support a.email {
+    background: url(../images/email.png) no-repeat 13px 5px;
+    padding-left: 76px;
+    border: 2px solid #111;
+}
+
+.quick-contact-form {
+    width: 100%;
+    float: left;
+    background: #A70000;
+    padding: 20px;
+}
+
+.quick-contact-form h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FACB0D;
+    margin: 0 0 5px 0;
+    font-family: ProximaNovaBold;
+}
+
+.quick-contact-form p {
+    font-family: ProximaNovaBold;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.form-fields {
+    width: 100%;
+    float: left;
+    margin: 6px 0px;
+}
+
+.form-fields .fields {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #5B0202;
+    font-family: ProximaNovaBold;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-fields .fields:focus,
+.msgbx:focus {
+    outline: none;
+}
+
+.form-fields .fields::placeholder,
+.msgbx::placeholder {
+    color: #fff
+}
+
+.form-fields select {
+    appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/rd-arrow.png) no-repeat scroll right 17px center;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 6px 10px 0px;
+    font-family: ProximaNovaBold;
+    outline: 0px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #5B0202;
+}
+
+.msgbx {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #5B0202;
+    height: 54px;
+    font-family: ProximaNovaBold;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-fields button[type="button"] {
+    width: 100%;
+    border: 0px;
+    font-size: 20px;
+    background: #5A0202;
+    color: #fff;
+    font-family: ProximaNovaBold;
+    padding: 12px 0px;
+    border-radius: 4px;
+}
+
+.form-fields button[type="button"]:hover {
+    background: #370101;
+}
+
+.ft-note {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: ProximaNovaAltLight;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+}
+
+.web-component1 {
+    width: 100%;
+    float: left;
+    background: #fff;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.section-head {
+    width: 100%;
+    float: left;
+}
+
+.section-head h2 {
+    color: #111;
+    margin: 0 0 8px 0;
+    font-family: ProximaNovaBold;
+    font-size: 35px;
+}
+
+.section-head .we-help {
+    width: 100%;
+    font-family: ProximaNovaBold;
+    font-size: 20px;
+    text-transform: uppercase;
+    float: left;
+    margin: 0 0 25px 0;
+}
+
+.web-component1 p {
+    font-size: 18px;
+    font-family: 'ProximaNovaAltLight';
+    width: 100%;
+    float: left;
+    line-height: 30px;
+    padding: 0px 0px;
+}
+
+.web-component2 {
+    width: 100%;
+    float: left;
+    background: #fbfbfb;
+    text-align: center;
+    padding: 50px 0px 40px;
+}
+
+
+.integrated-service {
+    width: 100%;
+    float: left;
+    margin: 0px 0 0 0;
+}
+
+.service--item {
+    width: 100%;
+    float: left;
+    border: 1px solid #AF0C0C;
+    padding: 20px;
+    background: #fff;
+    margin: 10px 0px;
+}
+
+.service--item figure {
+    width: 100%;
+    float: left;
+}
+
+.service--item h3 {
+    color: #111;
+    margin: 11px 0 9px 0;
+    font-family: ProximaNovaBold;
+    font-size: 19px;
+    text-transform: uppercase;
+    width: 100%;
+    float: left;
+}
+
+.service--item h3 span {
+    color: #AF0C0C;
+}
+
+.service--item p {
+    color: #565656;
+    font-size: 18px;
+    font-family: 'ProximaNovaAltLight';
+    line-height: 24px;
+}
+
+.service--item.p1 {
+    background: #F2F1F1;
+}
+
+.web-component3 {
+    width: 100%;
+    float: left;
+    background: #E8E7E7;
+    padding: 40px 0px;
+}
+
+.key-pillers {
+    width: 100%;
+    float: left;
+    margin: 23px 0 0 0;
+    text-align: left;
+}
+
+.key-pillers ul {
+    width: 100%;
+    float: left;
+    margin: 0 0 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.key-pillers ul li {
+    width: 100%;
+    float: left;
+    color: #AF0C0C;
+    font-size: 20px;
+    font-family: ProximaNovaBold;
+    padding: 30px 0 30px 86px;
+}
+
+.key-pillers ul li span {
+    font-family: 'ProximaNovaAltLight';
+    color: #111;
+}
+
+.key-pillers ul li.e1 {
+    background: url(../images/effective.png) no-repeat 0 20px;
+}
+
+.key-pillers ul li.e2 {
+    background: url(../images/Targeting.png) no-repeat 0 20px;
+    border-top: 1px solid #C5C5C5;
+    border-bottom: 1px solid #C5C5C5;
+}
+
+.key-pillers ul li.e3 {
+    background: url(../images/Strategies.png) no-repeat 0 20px;
+}
+
+.key-pillers figure {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.web-component4 {
+    width: 100%;
+    float: left;
+    background: #fff;
+    padding: 40px 0px;
+}
+
+.mb-price {
+    display: none
+}
+
+.web-component4 ul {
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0 0 0;
+}
+
+.web-component4 ul li {
+    width: 32%;
+    float: left;
+    text-align: center;
+    border: 1px solid #636363;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.web-component4 ul li:nth-child(1),
+.web-component4 ul li:nth-child(2),
+.web-component4 ul li:nth-child(3) {
+    border-top: 0px;
+}
+
+.web-component4 ul li:nth-child(4),
+.web-component4 ul li:nth-child(5),
+.web-component4 ul li:nth-child(6) {
+    border-bottom: 0px;
+}
+
+.web-component4 ul li:nth-child(1),
+.web-component4 ul li:nth-child(4) {
+    border-left: 0px;
+}
+
+.web-component4 ul li:nth-child(3),
+.web-component4 ul li:nth-child(6) {
+    border-right: 0px;
+}
+
+.web-component4 ul li figure {
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.web-component4 ul li h3 {
+    color: #111;
+    margin: 0px 0 0px 0;
+    font-family: ProximaNovaBold;
+    font-size: 20px;
+    width: 100%;
+    float: left;
+}
+
+.web-component4 ul li:nth-child(2):before {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+}
+
+.web-component4 ul li:nth-child(2):after {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+}
+
+.app-number-component {
+    width: 100%;
+    float: left;
+    margin: 50px 0 0 0;
+}
+
+.app-number-component ol {
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding: 0px 0 0 30px;
+    margin: 20px 0 0 0;
+}
+
+.app-number-component ol li {
+    width: 50%;
+    padding: 20px 0px;
+    float: left;
+}
+
+.app-number-component h3 {
+    color: #191919;
+    margin: 0px 0 9px 0;
+    padding-left: 10px;
+    font-family: ProximaNovaBold;
+    font-size: 35px;
+    text-transform: uppercase;
+    border-left: 5px solid #191919;
+}
+
+.app-number-component h3 span {
+    color: #AF0C0C
+}
+
+.app-number-component ol li h4 {
+    font-family: ProximaNovaBold;
+    font-size: 30px;
+    color: #111;
+    margin: 0px;
+    padding: 0px;
+}
+
+.app-number-component ol li p {
+    font-size: 18px;
+    font-family: 'ProximaNovaAltLight';
+}
+
+.app-number-component ol li p span {
+    color: #AF0C0C;
+    font-family: ProximaNovaBold;
+}
+
+.nm-component {
+    width: 100%;
+    float: left;
+    background: #F4F4F4;
+    padding: 30px;
+    border: 3px solid #AF0C0C;
+}
+
+.about-business-component {
+    width: 100%;
+    float: left;
+    margin: 40px 0 0 0;
+}
+
+.about-business-component h3 {
+    color: #191919;
+    margin: 15px 0 15px 0;
+    font-family: ProximaNovaBold;
+    font-size: 35px;
+}
+
+.about-business-component h3 span {
+    color: #AF0C0C
+}
+
+.about-business-component p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'ProximaNovaAltLight';
+}
+
+.sticky-enq {
+    position: fixed;
+    right: -67px;
+    transform: rotate(270deg);
+    top: 50%;
+    z-index: 567;
+}
+
+.sticky-enq a {
+    background: #A70000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: ProximaNovaBold;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.sticky-enq a:hover {
+    text-decoration: none;
+    background: #5A0202;
+}
+
+.about-business-sp {
+    width: 100%;
+    float: left;
+    margin: 40px 0 0 0;
+}
+
+.clients-st {
+    width: 100%;
+    float: left;
+    background: #AF0C0C;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.clients-st h3,
+.testimonial-bx h3 {
+    color: #fff;
+    margin: 0px 0 15px 0;
+    font-family: ProximaNovaBold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.clients-st figure img {
+    max-width: 100%;
+}
+
+.clients-st h3 span {
+    color: #111
+}
+
+.testimonial-bx {
+    width: 100%;
+    float: left;
+    background: #000;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.testimonial-bx .carousel-indicators {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 6px 0 0 0;
+}
+
+.testimonial-bx .carousel-inner>.item {
+    text-align: left
+}
+
+.testimonial-bx p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 19px;
+    font-family: 'ProximaNovaAltLight';
+}
+
+.testimonial-bx span.name {
+    display: block;
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.testimonial-bx h3 span {
+    color: #AF0C0C
+}
+
+.sticky-footer {
+    display: none
+}
+
+.copyrightinfo {
+    width: 100%;
+    float: left;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    background: #000000;
+    color: #fff;
+}
+
+.our-process-bx {
+    width: 100%;
+    float: left;
+}
+
+
+.call-back-action {
+    width: 100%;
+    float: none;
+    background: #fff;
+    padding: 8px 42px 0px;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.call-back-action h4 {
+    font-family: 'ProximaNovaBold';
+    font-size: 30px;
+    color: #a70000;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.call-back-action h4 span {
+    font-family: 'ProximaNovaAltLight';
+    color: #a70000;
+}
+
+.call-back-action select {
+    appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/dd-arrow2.jpg) no-repeat scroll right 11px center;
+    float: left;
+    font-size: 16px;
+    height: 53px;
+    color: #111;
+    padding: 10px 6px 10px 8px;
+    font-family: ProximaNovaBold;
+    outline: 0px;
+    width: 134px;
+    border: 0;
+    border: 1px solid #8c8c8c;
+    background-size: 13px;
+}
+
+.call-back-action input[type="number"]:focus {
+    outline: none
+}
+
+.call-back-action input[type="number"] {
+    width: 100%;
+    display: block;
+    float: none;
+    border: 1px solid #8c8c8c;
+    border-left: 0;
+    height: 53px;
+    font-size: 18px;
+    padding: 10px;
+    color: #111;
+}
+
+.phone-num-field {
+    width: auto;
+    margin-left: 134px;
+    float: none;
+    position: relative;
+}
+
+.call-back-action button[type="button"] {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background: #a70000;
+    border: 0;
+    color: #fff;
+    height: 49px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 49px;
+    padding: 0 15px;
+}
+
+.banenr-slides-app .carousel-indicators {
+    position: relative;
+    bottom: 0;
+    left: 0%;
+    z-index: 15;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.banenr-slides-app .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #a70000;
+    border-radius: 10px;
+}
+
+.banenr-slides-app .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #a70000;
+}
+
+.banenr-slides-app .item {
+    text-align: center
+}
+
+.call-back-section {
+    background: #ffffff;
+    width: 100%;
+    float: left;
+    padding: 42px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.call-btn {
+    display: none
+}
+
+@media screen and (max-width:767px) {
+    .call-back-action {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .call-back-action button[type="button"] {
+        position: relative;
+        right: 0;
+        top: 0;
+        background: #a70000;
+        border: 0;
+        color: #fff;
+        height: 49px;
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 49px;
+        padding: 0 15px;
+        width: 100%;
+        left: 0;
+    }
+
+    .sticky-phone {
+        display: none
+    }
+
+    .mobile-app-phone {
+        display: block;
+    }
+
+    .mobile-app-phone .call-wrap {
+        border-top: 0 none;
+        float: left;
+        margin-top: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .mobile-app-phone .consultantbx {
+        float: left;
+        margin-top: 0;
+        padding: 23px 14px 0 12px;
+        width: 100%;
+    }
+
+    .mobile-app-phone .call-bx {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        float: left;
+        font-size: 23px;
+        line-height: 30px;
+        padding-bottom: 0;
+        padding-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sbt-btn12 {
+        background: #b21414 url("../images/call-icon.png") no-repeat scroll center 3px;
+        border: 0 none;
+        border-radius: 18px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 0;
+        padding: 16px 10px 3px 18px;
+        position: absolute;
+        right: 11px;
+        text-align: center;
+        text-transform: uppercase;
+        top: 15px;
+        z-index: 12;
+    }
+
+    .mobile-app-phone {
+        float: left;
+        margin-top: 0;
+        padding: 38px 0px 3px 0;
+        width: 100%;
+    }
+
+    .mobile-app-phone .type-field {
+        float: left;
+        margin-bottom: 0;
+        margin-top: 9px;
+        position: relative;
+        width: 100%;
+    }
+
+    .phone-call-btn {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contactformresponsive .contactform {
+        float: left;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .consultantbx {
+        padding: 20px 1px;
+        margin: 0px;
+    }
+
+    .mobile-app-phone .call-bx span {
+        display: inline-block;
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 5px;
+    }
+
+    .logo-area {
+        float: left;
+        padding-top: 5px;
+        text-align: center;
+        width: 100%;
+        clear: both;
+        position: relative;
+        z-index: 123;
+    }
+
+    .logo-area img,
+    .logo2 img {
+        max-width: 100%;
+    }
+
+    .slide-banner {
+        float: left;
+        margin-top: 28px;
+        padding: 0 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .slide-banner .banner img {
+        display: inline-block;
+    }
+
+    .banner {
+        float: left;
+        width: 100%;
+        margin-top: 42px;
+    }
+
+    .banner img {
+        max-width: 100%;
+    }
+
+    .bx-wrap2 {
+        height: auto;
+    }
+
+    .section-left,
+    .section-right {
+        width: 100%;
+    }
+
+    .str-bx,
+    .iso-bx {
+        border-right: 0px;
+    }
+
+    .help-bx-a h2 {
+        font-size: 36px;
+    }
+
+    .bx-1 h4 {
+        font-size: 24px;
+        line-height: 24px;
+        padding-top: 6px;
+    }
+
+    .vertical-line {
+        border: 0px;
+    }
+
+    .phone a {
+        font-size: 33px;
+    }
+
+    .type-field .text-field {
+        float: right;
+        margin-top: 10px;
+        position: relative;
+        width: 100%;
+        z-index: 12;
+    }
+
+
+    .contact-form-container {
+        padding: 30px 0 40px 0;
+    }
+
+    .price-img {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .price-container p {
+        text-align: justify;
+    }
+
+    .help-bx-a h1 {
+        font-size: 37px;
+    }
+
+    .text-top {
+        padding-right: 0px;
+    }
+
+    .help-bx-a h2 {
+        font-size: 28px;
+    }
+
+    .price-container h3 {
+        color: #111;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .contactform_mobile {
+        display: none;
+    }
+
+    .animatefix .container {
+        padding: 0px;
+    }
+
+    .sticky-logo {
+        width: 159px;
+        float: left;
+    }
+
+    .sticky-phone {
+        margin-top: 0px;
+    }
+
+    .sticky-phone a {
+        font-size: 13px;
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+
+
+    .side-sticky-link.explore-btn3 {
+        position: fixed;
+        right: -87px;
+        bottom: 50%;
+        z-index: 99999;
+        background: #1b1b1b url(../images/email3-icon.png) 17px 8px no-repeat;
+        color: #fff;
+        padding: 12px 12px 11px 63px;
+        text-transform: uppercase;
+        font-size: 21px;
+        font-weight: bold;
+        border-radius: 0px 0 0 0px;
+        /* Safari */
+        -webkit-transform: rotate(-90deg);
+
+        /* Firefox */
+        -moz-transform: rotate(-90deg);
+
+        /* IE */
+        -ms-transform: rotate(-90deg);
+
+        /* Opera */
+        -o-transform: rotate(-90deg);
+
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        cursor: pointer;
+        transition: all 0.5s linear 0s;
+        -o-transition: all 0.5s linear 0s;
+        -webkit-transition: all 0.5s linear 0s;
+        -moz-transition: all 0.5s linear 0s;
+    }
+
+    .side-sticky-link.explore-btn3:hover {
+        background: #af0c0c url(../images/email3-icon.png) 21px 7px no-repeat;
+        background-size: 26px;
+    }
+
+    .heed_email {
+        display: none;
+    }
+
+    .sticky-footer {
+        display: block;
+    }
+
+    .dp-bx .country-fields {
+        border-radius: 30px;
+        padding-left: 20px !important;
+        width: 100% !important;
+    }
+
+    .sticky-footer .sticky-phone {
+        float: left;
+        width: 100%;
+    }
+
+    .sticky-footer .sticky-phone a {
+        float: left;
+        width: 50%;
+        font-size: 17px;
+    }
+
+    .sticky-footer .sticky-phone a.mobile-num {
+        background: #000;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .sticky-footer .sticky-phone a.email {
+        background: #b21414;
+        padding: 10px 5px 10px 5px;
+        margin: 0px;
+    }
+
+    .navigation-bx ul {
+        padding: 0px;
+    }
+
+    .responsive_nav {
+        display: block;
+        float: right;
+        cursor: pointer;
+        margin: 5px 6px 0 4px;
+    }
+
+    .navigation-bx {
+        float: left;
+        display: none;
+        width: 100%;
+        top: 50px;
+        position: absolute;
+        background: #fff;
+        border-bottom: 1px solid #333;
+    }
+
+    .navigation-bx ul li {
+        float: left;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation-bx ul li a {
+        border-bottom: 1px solid #f2f2f2;
+        color: #000;
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 7px 9px;
+    }
+
+    .navigation-bx ul li a:hover {
+        color: #af0c0c;
+    }
+
+    .h2-head {
+        font-size: 29px;
+        padding: 13px 0;
+    }
+
+    .wrapper {
+        margin-top: 110px;
+    }
+
+    .contactformresponsive {
+        display: block;
+        padding: 0px 10px;
+        margin-bottom: 20px;
+        float: left;
+        width: 98%;
+    }
+
+    .contactformresponsive .contactform h4 {
+        border-top: 1px solid #ccc;
+        color: #212121;
+        font-size: 24px;
+        margin-bottom: 14px;
+        padding: 17px 0 0;
+        text-align: center;
+    }
+
+    .contactformresponsive h4 span {
+        color: #af0c0c;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .contactformresponsive .form-group {
+        margin-bottom: 5px;
+        width: 100%;
+        float: left;
+    }
+
+    .contactformresponsive .msgbx {
+        height: 44px;
+    }
+
+    .side-sticky-link {
+        display: none;
+    }
+
+    .slide-banner {
+        margin-top: 0px;
+    }
+
+    .dp-bx .country-fields {
+        border-radius: 30px;
+        margin-right: 1%;
+        padding-left: 20px !important;
+        width: 98% !important;
+    }
+
+    .sc-counting {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .banner-info-component h2 {
+        font-size: 29px;
+        line-height: 35px;
+    }
+
+    .banner-info-component {
+        margin-top: 27px;
+    }
+
+    .sp-support {
+        width: 100%;
+        float: left;
+        margin: 29px 0 40px 0;
+        text-align: center;
+    }
+
+    .sp-support a {
+        display: block;
+        margin: 7px 0px;
+    }
+
+    .banner-info-component h3 {
+        font-size: 18px;
+    }
+
+    .sc-counting:before {
+        display: none
+    }
+
+    .banner-info-component {
+        width: 100%;
+        float: left;
+        padding-right: 0;
+    }
+
+    .web-component1 p {
+        padding: 0px;
+    }
+
+    .testimonial-bx {
+        margin-top: 20px;
+    }
+
+    .nm-component {
+        margin: 5px 0px;
+    }
+
+    .about-business-component figure img {
+        max-width: 100%
+    }
+
+    .call-back-action {
+        padding: 0px;
+    }
+
+    .call-back-action select {
+        display: none
+    }
+
+    .phone-num-field {
+        margin-left: 0;
+    }
+
+    .call-back-action input[type="number"] {
+        border-left: 1px solid #8c8c8c;
+        height: 53px;
+        margin-bottom: 12px;
+    }
+
+    .web-component4 ul li h3 {
+        font-size: 12px;
+        width: 100%;
+        float: left;
+    }
+
+    .web-component4 ul li figure img {
+        width: 50px;
+    }
+
+    .section-head h2 {
+        font-size: 24px;
+    }
+
+    .app-number-component h3,
+    .about-business-component h3,
+    .clients-st h3,
+    .testimonial-bx h3 {
+        font-size: 24px;
+    }
+
+    .app-number-component ol {
+        padding: 0px 0 0 0px;
+    }
+
+    .app-number-component ol li h4 {
+        font-size: 22px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .app-number-component ol li p {
+        font-size: 15px;
+    }
+
+    .banenr-slides-app .carousel-inner {
+        min-height: 292px;
+    }
+
+    .sticky-enq {
+        display: none
+    }
+
+    .mb-price {
+        display: block;
+        width: 100%;
+        float: left;
+        text-align: center;
+        border-top: 1px solid #e9a00a;
+        padding-bottom: 20px;
+        background: #fff;
+    }
+
+    .mb-price h3 {
+        font-size: 39px;
+        margin-bottom: 5px;
+        font-family: 'ProximaNovaBold';
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .mb-price h3 span {
+        font-size: 22px;
+        display: block;
+        color: #a70000;
+    }
+
+    .br-price {
+        font-size: 29px;
+        font-family: 'ProximaNovaBold';
+    }
+
+    .banner-info-component p {
+        font-size: 19px;
+    }
+
+    .sc-counting ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .sc-counting ul li {
+        text-transform: none;
+        margin: 0 8px 5px;
+        background: url(../images/tick-sign.png) no-repeat 0px 7px;
+        padding-left: 17px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-size: 11px;
+        font-size: 19px;
+        float: left;
+        margin-right: 0;
+    }
+
+    .sc-counting {
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 12px;
+    }
+
+    .banenr-slides-app .carousel-indicators {
+        margin-top: 12px;
+    }
+
+    .sticky-logo {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .animatefix.active {
+        transition: ease all 0.4s;
+        transform: translateY(-74px);
+    }
+
+    .animatefix {
+        transition: ease all 0.4s;
+    }
+
+    .call-btn {
+        display: block;
+        float: left;
+        margin-top: 3px;
+    }
+
+    .call-btn a {
+        font-size: 18px;
+        margin: 0px;
+        background: #af0c0c;
+        color: #fff;
+        padding: 5px 19px;
+        border-radius: 3px;
+        margin-left: 8px;
+    }
+}
+
+
+@media screen and (max-width:479px) {
+    .sticky-footer .sticky-phone a img {
+        display: none;
+    }
+
+    .sticky-footer .sticky-phone a {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .navigation-bx ul li a {
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+}
